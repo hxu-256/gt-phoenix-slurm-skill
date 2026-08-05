@@ -4,6 +4,8 @@ An agent skill for running jobs on the Georgia Tech
 **PACE Phoenix** Slurm cluster — submitting batch jobs, checking quotas and queues, and
 reading back logs, without writing raw Slurm syntax by hand.
 
+Before setting up or using this agent skill, please read through the introductory guide:
+https://github.com/abishakex/Intro-To-PACE
 ---
 
 ## Prerequisites
@@ -12,7 +14,8 @@ Three things must be true before the skill can do anything. None are scriptable:
 
 1. You have a GT account with PACE access.
 2. Your PI has added you to their allocation.
-3. SSH to a Phoenix login node works **without an interactive prompt** (see below).
+3. You have basic PACE Cluster familiarity and have read through https://github.com/abishakex/Intro-To-PACE.
+4. SSH to a Phoenix login node works **without an interactive prompt** (see below).
 
 ---
 

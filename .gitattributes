@@ -1,0 +1,11 @@
+# Force LF line endings in the working tree on every platform.
+#
+# Git for Windows defaults to core.autocrlf=true, which rewrites LF -> CRLF on
+# checkout. A .sbatch file with CRLF fails on the Phoenix compute nodes with a
+# confusing "$'\r': command not found". Without this file, every Windows user
+# who clones the repo would silently receive broken job scripts.
+* text=auto eol=lf
+
+# Belt and braces: these must never be CRLF, whatever the auto-detection decides.
+*.sbatch text eol=lf
+*.sh     text eol=lf
